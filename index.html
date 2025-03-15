@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- etiquetas meta -->
+    <meta name="description" content="Tarjeta de estadisticas de redes sociales">
+    <meta name="keywords" content="tarjeta analisis, estadisticas redes sociales">
+    <meta name="author" content="Santos Romero">
+    <!-- chartjs -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- estilos2 -->
+     <link rel="stylesheet" href="css/reducido.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!-- titulo -->
+    <title>Analytics Card | Santos Romero</title>
+</head>
+
+<body>
+
+    <section class="container-fluid bg-info d-flex justify-content-center align-items-center vh-100">
+        <div class="card rounded-5 shadow bg-secondary p-4" style="width: 700px;">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="fw-bold">Traffic source types</h2>
+                    <p>Views . Last 28 days</p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="chart-container">
+                        <canvas id="donutChart"></canvas>
+                        <div class="chart-label">Traffic sources</div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8">
+                    <div class="p-4">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <td>Channel page</td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;width: 130px;">
+                                            <div class="progress-bar" style="width: 130px;"></div>
+                                        </div>
+                                    </td>
+                                    <td>37.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Direct or unknown</td>
+                                    <td>
+                                        <div class="progress float-sm-end" style="height: 7px;width: 110px;">
+                                            <div class="progress-bar" style="width: 110px;"></div>
+                                        </div>
+                                    </td>
+                                    <td>33.6%</td>
+                                </tr>
+                                <tr>
+                                    <td>Search</td>
+                                    <td>
+                                        <div class="progress float-sm-end" style="height: 7px;width: 70px;">
+                                            <div class="progress-bar" style="width: 70px;"></div>
+                                        </div>
+                                    </td>
+                                    <td>11%</td>
+                                </tr>
+                                <tr>
+                                    <td>External</td>
+                                    <td>
+                                        <div class="progress float-sm-end" style="height: 7px;width: 30px;">
+                                            <div class="progress-bar" style="width: 30px;"></div>
+                                        </div>
+                                    </td>
+                                    <td>6%</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" class="text-decoration-underline">See more</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- js file -->
+     <script src="js/script.js"></script>
+</body>
+
+</html>
